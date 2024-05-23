@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rating System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="cont">
+    <img src="./Cartona_Logo_Horizontal_BlueOnWhite_Arabic.jpg" />
+    <h1>Scoring System</h1>
+    </div>
+    
+    <form id="rating-form "  method="post" action="https://script.google.com/a/macros/cartona.com/s/AKfycbw8TJ2HAwCABqJcnFSGw3wcChs2mpaEgHxLd1VU8B_gY8l3Z6cfqMnMb7w__DRKo8Q/exec">
+      <div class="retailerInfo">
+        <label for="">Retailer ID:</label>
+         <input type="text" name="retailerID" placeholder="">
+      </div>
+      <div class="retailerInfo">
+        <label for="">Retailer Name:</label>
+         <input type="text" name="retailerName" placeholder="">
+      </div>
+      <div class="retailerInfo">
+        <label for="">Retailer Phone:</label>
+         <input type="text" name="retailerPhone" placeholder="">
+      </div>
+      <!-- Add dropdown menus for each criterion -->
+        <!-- مساحة المحل -->
+<div class="criterion">
+    <label for="store-size">Store Area: </label>
+    <select id="store-size" name="storeSize">
+      <option value="9">From 10 M to 20 M</option>
+      <option value="16">From 20 M to 40</option>
+    </select>
+  </div>
+  
+  <!-- التحصيل في المنطقة -->
+  <div class="criterion">
+    <label for="sales-achievement">Collection: </label>
+    <select id="sales-achievement" name="collection">
+      <option value="25">94% to 97%</option>
+      <option value="16">81% to 93%</option>
+      <option value="8">70% to 80%</option>
+    </select>
+  </div>
+  
+  <!-- stock -->
+  <div class="criterion">
+    <label for="stock">stock:</label>
+    <select id="stock" name="stock">
+      <option value="25">High</option>
+      <option value="16">Medium</option>
+      <option value="8">Low</option>
+    </select>
+  </div>
+  
+  <!-- Reachability per task -->
+  <div class="criterion">
+    <label for="reachability">Reachability:</label>
+    <select id="reachability" name="reachability">
+      <option value="16">Answered from 1st trial to 2nd trial</option>
+      <option value="9">Answered from 3rd trial to 4th trial</option>
+      <option value="4">Answered More than 4th</option>
+    </select>
+    </div>
+     <!-- Reachability per task -->
+     <div class="criterion">
+        <label for="fridges">Fridges : </label>
+        <select id="fridges" name="fridges">
+          <option value="2"> One </option>
+          <option value="5">Two </option>
+          <option value="8">from Two to four </option>
+          <option value="16">More than 4 </option>
+        </select>
+        </div>
+       
+      <!-- Add more criteria dropdown menus here -->
+       <!-- <div class="button-container">
+        <button type="button" onclick="calculateScore()">Installment limit</button>
+       </div> -->
+       <div class="result-container">
+        <textarea  id="result" name="data" value=""></textarea>
+      </div> 
+       <div class="button-container">
+        <button type="submit"onclick="calculateScore()" >Installment limit</button>
+       </div>
+       
+
+      
+    </form>
+   
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
